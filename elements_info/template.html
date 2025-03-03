@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/elements.css">
+    <title>Periodic Table Element Information</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="element-card">
+        <h1>{{symbol}}</h1>
+        <h2>{{name}}</h2>
+        <p>Atomic Number: {{atomic_number}}</p>
+        <img src="{{image_url}}" alt="Electron shell of {{name}}">
+        <div class="info">
+            <div><label>Symbol:</label> <span>{{symbol}}</span></div>
+            <div><label>Atomic Weight:</label> <span>{{atomic_weight}} u</span></div>
+            <div><label>Category:</label> <span>{{category}}</span></div>
+            <div><label>Group:</label> <span>{{group}}</span></div>
+            <div><label>Period:</label> <span>{{period}}</span></div>
+            <div><label>Density:</label> <span>{{density}} g/cm³</span></div>
+            <div><label>Boiling Point:</label> <span>{{boiling_point}} °C</span></div>
+            <div><label>Melting Point:</label> <span>{{melting_point}} °C</span></div>
+        </div>
+        <div class="card-footer">
+            Information source: <a href="{{wiki_link}}" target="_blank">Wikipedia</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
